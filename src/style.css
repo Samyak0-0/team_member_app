@@ -1,0 +1,111 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: fit-content;
+    margin: 0 auto;
+    
+}
+
+.card-selected {
+    box-shadow: rgba(0, 0, 0, 0.274) 0px 4px 4px, rgb(50, 47, 47) 0px 0px 0px 3px;
+    margin: 1vh 2vw;
+    border-radius: 7px;
+    
+}
+.card-unselected {
+    margin: 1vh 2vw;
+    border-radius: 7px;
+    border: 2px solid #efbcbe;
+   
+}
+
+
+.pfp {
+    width: 100%;
+    
+}
+
+.card-body {
+    padding: 0 5px;
+}
+
+select {
+    width: 50vw;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #b2cbf1;
+    max-width: 700px;
+    
+}
+
+.drop-down {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    background: rgba(190, 221, 241, 0.466);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    top:0;
+    left:0;
+    grid-template-columns: 90px 90px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(58, 66, 63);
+    font-size: 30px;
+   
+}
+
+.nav-item {
+    margin: 5px 0px 5px 0px;
+   
+}
+
+.header {
+    margin-top: 100px;
+}
+
+.error {
+    color: red;
+}
+
+.collapsed {
+    font-size: 0;
+}
+
+#wrapper {
+    border: 2px solid black;
+   
+    margin: 15px 15px 0px 10px;
+    padding-left: 14px;
+}
+
+.group-data {
+    border: 2px solid black;
+    margin: 3px 10px 5px 3px;
+    padding: 0px 10px;
+    background: #e3eaf5;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-collection {
+        grid-template-columns: 1fr;
+    }
+}
